@@ -86,7 +86,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 'a'
   end
 
-  it 'longest_word_in_array' do
+  fit 'longest_word_in_array' do
     n = longest_word_in_array %w(here is a bunch of words of different lengths)
     expect(n).to eq 'different'
   end
@@ -216,7 +216,7 @@ describe 'the Friday test :)' do
     expect(n).to eq 2016
   end
 
-  fit 'count_words_of_each_length_in_a_file' do
+  it 'count_words_of_each_length_in_a_file' do
     n = count_words_of_each_length_in_a_file('lorem.txt') || []
     expect(Hash[n.sort]).to eq({1=>1, 2=>5, 3=>7, 4=>12, 5=>14, 6=>4, 7=>8, 8=>6, 9=>6, 10=>2, 11=>2, 12=>3}) 
   end
