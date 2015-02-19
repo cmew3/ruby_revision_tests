@@ -65,3 +65,29 @@ end
 def longest_word_in_array array
   array.sort {|word1, word2| word1.length <=> word2.length }.last
 end
+
+def total_of_array array
+  array.inject(:+)
+
+end
+
+def double_array array
+  array + array
+end
+
+def turn_symbol_into_string symbol
+  symbol.to_s
+end
+
+def average_of_array array
+  (array.inject(:+)/array.count.to_f).round
+end
+
+def get_elements_until_greater_than_five array
+  array.take_while {|x| x < 6}
+end
+
+def convert_array_to_a_hash array
+  Hash array
+end
+
